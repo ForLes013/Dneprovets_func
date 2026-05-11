@@ -1,0 +1,443 @@
+/* Schedule Page Styles */
+.schedule-page1 {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #111111 50%, #0a0a0a 100%);
+  padding: 100px 0 50px;
+}
+
+.schedule-container1 {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.schedule-header1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.schedule-title1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.schedule-subtitle1 {
+  font-size: 1.3rem;
+  color: #cccccc;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Элементы управления */
+.schedule-controls1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.week-navigation1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-button1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #cccccc;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.nav-button1:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #d4a574;
+  color: #ffffff;
+}
+
+.current-week1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: rgba(212, 165, 116, 0.1);
+  border: 1px solid rgba(212, 165, 116, 0.3);
+  border-radius: 8px;
+  color: #d4a574;
+  font-weight: 600;
+}
+
+.filters1 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-group1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #cccccc;
+}
+
+.filter-select1 {
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family: inherit;
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.filter-select1:focus {
+  outline: none;
+  border-color: #d4a574;
+}
+
+/* Таблица расписания */
+.schedule-table-container1 {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.schedule-table1 {
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+.table-header1 {
+  display: grid;
+  grid-template-columns: 100px repeat(7, 1fr);
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.time-column1 {
+  padding: 20px;
+  font-weight: 600;
+  color: #d4a574;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.day-column1 {
+  padding: 15px 10px;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.day-column1:last-child {
+  border-right: none;
+}
+
+.day-short1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.day-full1 {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.table-body1 {
+  flex: 1;
+}
+
+.time-row1 {
+  display: grid;
+  grid-template-columns: 100px repeat(7, 1fr);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  min-height: 80px;
+}
+
+.time-row1:last-child {
+  border-bottom: none;
+}
+
+.time-slot1 {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #cccccc;
+  font-weight: 500;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.day-cell1 {
+  padding: 5px;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.day-cell1:last-child {
+  border-right: none;
+}
+
+/* Блоки тренировок */
+.training-block1 {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 4px solid;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.training-block1:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.training-time1 {
+  font-size: 0.8rem;
+  color: #d4a574;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.training-group1 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.training-coach1 {
+  font-size: 0.75rem;
+  color: #cccccc;
+  margin-bottom: 6px;
+}
+
+.training-details1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 8px;
+}
+
+.training-branch1,
+.training-age1 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  color: #999;
+}
+
+.training-type-badge1 {
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.book-button1 {
+  width: 100%;
+  padding: 4px 8px;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.book-button1:hover {
+  transform: translateY(-1px);
+}
+
+/* Легенда */
+.schedule-legend1 {
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+}
+
+.schedule-legend1 h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.legend-items1 {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.legend-item1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+.legend-color1 {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .schedule-table-container1 {
+    overflow-x: auto;
+  }
+
+  .schedule-table1 {
+    min-width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-page1 {
+    padding: 80px 0 30px;
+  }
+
+  .schedule-title1 {
+    font-size: 2.5rem;
+  }
+
+  .schedule-subtitle1 {
+    font-size: 1.1rem;
+  }
+
+  .schedule-controls1 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .week-navigation1 {
+    justify-content: center;
+  }
+
+  .filters1 {
+    justify-content: center;
+  }
+
+  .legend-items1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .schedule-title1 {
+    font-size: 2rem;
+  }
+
+  .schedule-controls1 {
+    padding: 20px;
+  }
+
+  .week-navigation1 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filters1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-group1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #cccccc;
+}
+
+.empty-state h3 {
+  color: #ffffff;
+  margin: 20px 0 10px;
+}
+
+.empty-state p {
+  color: #999;
+}
+
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  color: #cccccc;
+}
+
+.loading-state .spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Убедитесь, что select не заблокирован стилями */
+.filter-select1:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.filter-select1 option {
+  color: #000000 !important;
+  background-color: #ffffff;
+}

@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+/* Импорты должны быть ПЕРВЫМИ в файле */
+@import url("./components/Header.css");
+@import url("./components/HeroSection.css");
+@import url("./components/HistorySection.css");
+@import url("./components/MethodologySection.css");
+@import url("./components/BranchesSection.css");
+@import url("./components/AboutSection.css");
+@import url("./components/ConceptSection.css");
+@import url("./components/TeamSection.css");
+@import url("./components/ContactsSection.css");
+@import url("./SchedulePage.css");
+@import url("./CampsPage.css");
+@import url("./components/auth.css");
+@import url("./components/profile.css");
+@import url("./components/admin.css");
+@import url("./components/portalHub.css");
+@import url("./components/opsDesk.css");
+
+/* Глобальные сбросы и базовые стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Новая цветовая палитра - оранжево-бежевый и синий */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-card: #1a1a1a;
+
+  /* Оранжево-бежевая гамма */
+  --accent-primary: #d4a574; /* Теплый бежевый */
+  --accent-secondary: #b8860b; /* Золотисто-оранжевый */
+  --accent-glow: #e6b84c; /* Светлый бежево-оранжевый */
+
+  /* Синяя гамма */
+  --blue-primary: #4169e1; /* Королевский синий */
+  --blue-secondary: #1e40af; /* Темно-синий */
+  --blue-glow: #4f7df3; /* Светло-синий */
+
+  /* Текст */
+  --text-primary: #ffffff;
+  --text-secondary: #e5e5e5;
+  --text-muted: #a0a0a0;
+
+  /* Границы */
+  --border-color: #333333;
+  --border-accent: #d4a574;
+}
+
+body {
+  background-color: var(--bg-primary);
+  font-family: "Inter", "Arial", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Скрыть scrollbar для красоты */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    var(--accent-primary),
+    var(--blue-primary)
+  );
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--accent-glow), var(--blue-glow));
+}

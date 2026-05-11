@@ -1,0 +1,275 @@
+/* Simple Camps Page */
+.simple-camps-page1 {
+  min-height: 100vh;
+  padding: 20px 0;
+  background: #0a0a0a;
+  color: white;
+  margin-top: 10vh;
+}
+
+.camps-content1 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Заголовок */
+.camps-header1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.camps-header1 h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+}
+
+.camps-header1 p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+/* Секции */
+.camps-section1 {
+  margin-bottom: 50px;
+}
+
+.camps-section1 h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Особенности */
+.features-list1 {
+  display: block;
+}
+
+.feature-item1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.feature-item1 svg {
+  color: #d4a574;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.feature-item1 h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.feature-item1 p {
+  color: #cccccc;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Программы */
+.programs-list1 {
+  display: block;
+}
+
+.program-item1 {
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.program-item1 h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #d4a574;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.program-info1 {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.program-info1 span {
+  color: #cccccc;
+  font-size: 0.95rem;
+}
+
+.includes1 p {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.includes1 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.includes1 li {
+  color: #cccccc;
+  margin-bottom: 5px;
+  padding-left: 0;
+}
+
+/* Расписание */
+.schedule1 {
+  display: block;
+}
+
+.schedule-item1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.time1 {
+  font-weight: 700;
+  color: #d4a574;
+  min-width: 70px;
+  font-size: 1rem;
+}
+
+.activity1 {
+  color: #cccccc;
+  flex: 1;
+}
+
+/* CTA */
+.camps-cta1 {
+  padding: 40px 30px;
+  background: rgba(212, 165, 116, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.camps-cta1 h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.camps-cta1 p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 25px;
+}
+
+.cta-buttons1 {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons1 button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.cta-buttons1 button:first-child {
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  color: #000000;
+}
+
+.cta-buttons1 button:last-child {
+  background: transparent;
+  color: #d4a574;
+  border: 2px solid #d4a574;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .camps-content1 {
+    padding: 0 15px;
+  }
+
+  .camps-header1 h1 {
+    font-size: 2rem;
+  }
+
+  .camps-header1 p {
+    font-size: 1.1rem;
+  }
+
+  .camps-section1 h2 {
+    font-size: 1.5rem;
+  }
+
+  .feature-item1 {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .program-info1 {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .schedule-item1 {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .time1 {
+    min-width: auto;
+  }
+
+  .cta-buttons1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons1 button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .camps-header1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .program-item1,
+  .feature-item1 {
+    padding: 15px;
+  }
+}

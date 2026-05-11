@@ -1,0 +1,28 @@
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.pyc.*
+
+# Local SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated application exports
+applications/*.txt
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Frontend local artifacts
+client/node_modules/
+client/build/
+client/build-temp*/
+client/*.zip

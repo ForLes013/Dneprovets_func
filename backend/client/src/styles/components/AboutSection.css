@@ -1,0 +1,360 @@
+/* About Section - Полностью изолированные стили */
+.about-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #111111 0%, #0a0a0a 50%, #111111 100%);
+  position: relative;
+  scroll-margin-top: 80px;
+  content-visibility: auto;
+  contain-intrinsic-size: 960px;
+}
+
+.about-section .section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-section-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.about-section-subtitle {
+  font-size: 1.3rem;
+  color: #cccccc;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 80px;
+  align-items: start;
+}
+
+.about-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about-description h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.about-description p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+.about-description p:last-child {
+  margin-bottom: 0;
+}
+
+.about-features-grid {
+  display: grid;
+  gap: 25px;
+}
+
+.about-feature-card {
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  transition: all 0.2s ease;
+}
+
+.about-feature-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(212, 165, 116, 0.3);
+  transform: translateY(-2px);
+}
+
+.about-feature-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.about-feature-description {
+  font-size: 1rem;
+  color: #999999;
+  line-height: 1.6;
+}
+
+.about-visual-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about-stat-card {
+  padding: 30px 2 5px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.about-stat-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(65, 105, 225, 0.3);
+  transform: translateY(-2px);
+}
+
+.about-stat-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  color: #000000;
+}
+
+.about-stat-value {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 5px;
+}
+
+.about-stat-label {
+  font-size: 0.9rem;
+  color: #cccccc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.about-values-section {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.about-values-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-values-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.about-value-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.about-value-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.about-value-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000000;
+}
+
+.about-value-content {
+  flex: 1;
+}
+
+.about-value-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.about-value-description {
+  font-size: 0.9rem;
+  color: #999999;
+  line-height: 1.5;
+}
+
+.about-cta-section {
+  padding: 60px 40px;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 165, 116, 0.1),
+    rgba(65, 105, 225, 0.1)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.about-cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-cta-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.about-cta-description {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.about-cta-button {
+  padding: 16px 40px;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  color: #000000;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.about-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(65, 105, 225, 0.3);
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .about-main-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .about-section-title {
+    font-size: 3rem;
+  }
+
+  .about-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 80px 0;
+  }
+
+  .about-section-title {
+    font-size: 2.5rem;
+  }
+
+  .about-section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .about-description h3 {
+    font-size: 1.8rem;
+  }
+
+  .about-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cta-section {
+    padding: 40px 25px;
+  }
+
+  .about-cta-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section-title {
+    font-size: 2rem;
+  }
+
+  .about-section-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-description h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-feature-card {
+    padding: 20px;
+  }
+
+  .about-stat-card {
+    padding: 25px 20px;
+  }
+
+  .about-stat-value {
+    font-size: 1.8rem;
+  }
+
+  .about-value-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .about-cta-title {
+    font-size: 1.5rem;
+  }
+
+  .about-cta-button {
+    width: 100%;
+    padding: 14px 20px;
+  }
+}

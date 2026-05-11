@@ -1,0 +1,1013 @@
+.phub-shell {
+  --phub-bg: #071420;
+  --phub-bg-soft: rgba(10, 27, 40, 0.88);
+  --phub-bg-card: rgba(13, 31, 46, 0.94);
+  --phub-bg-card-strong: rgba(8, 23, 35, 0.98);
+  --phub-border: rgba(138, 184, 255, 0.16);
+  --phub-border-strong: rgba(138, 184, 255, 0.28);
+  --phub-text: #f6fbff;
+  --phub-text-soft: #c9d8e7;
+  --phub-text-muted: #8ca4ba;
+  --phub-accent: #4ec7d3;
+  --phub-accent-strong: #79e5e9;
+  --phub-accent-warm: #f2b973;
+  position: relative;
+  min-height: 100vh;
+  padding: 112px 20px 40px;
+  background:
+    radial-gradient(circle at top left, rgba(78, 199, 211, 0.18), transparent 32%),
+    radial-gradient(circle at top right, rgba(242, 185, 115, 0.14), transparent 28%),
+    linear-gradient(180deg, #09131d 0%, #071420 42%, #06111b 100%);
+  color: var(--phub-text);
+}
+
+.phub-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.42), transparent 88%);
+}
+
+.phub-shell,
+.phub-shell * {
+  color: inherit;
+}
+
+.phub-shell button,
+.phub-shell input,
+.phub-shell select,
+.phub-shell textarea {
+  font: inherit;
+}
+
+.phub-shell h1,
+.phub-shell h2,
+.phub-shell h3,
+.phub-shell h4 {
+  color: var(--phub-text);
+}
+
+.phub-shell p,
+.phub-shell label,
+.phub-shell span {
+  color: var(--phub-text-soft);
+}
+
+.phub-hero {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.9fr);
+  gap: 20px;
+  padding: 28px;
+  border: 1px solid var(--phub-border);
+  border-radius: 30px;
+  background:
+    linear-gradient(135deg, rgba(11, 28, 42, 0.96), rgba(10, 23, 35, 0.92)),
+    rgba(10, 23, 35, 0.92);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
+}
+
+.phub-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(121, 229, 233, 0.12);
+  border: 1px solid rgba(121, 229, 233, 0.24);
+  color: var(--phub-accent-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.phub-heroCopy h1 {
+  margin-top: 18px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+}
+
+.phub-heroCopy p {
+  max-width: 760px;
+  margin-top: 14px;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.phub-heroMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.phub-metaChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--phub-text);
+}
+
+.phub-heroAside {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.phub-statRack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.phub-statTile,
+.phub-spotlight,
+.phub-contextBar,
+.phub-stage,
+.phub-view .lk-feature-card,
+.phub-view .lk-surface-card,
+.phub-view .lk-metric-card,
+.phub-view .lk-empty-card,
+.phub-view .lk-payment-card,
+.phub-view .lk-upcoming-session,
+.phub-view .child-card,
+.phub-view .stats-card,
+.phub-view .attendance-item,
+.phub-view .attendance-card {
+  border: 1px solid var(--phub-border);
+  background: var(--phub-bg-card);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.22);
+}
+
+.phub-statTile {
+  padding: 18px;
+  border-radius: 22px;
+}
+
+.phub-statTile strong {
+  display: block;
+  color: var(--phub-text);
+  font-size: 1.9rem;
+  line-height: 1;
+}
+
+.phub-statTile span {
+  display: block;
+  margin-top: 8px;
+  color: var(--phub-text-soft);
+  font-size: 0.92rem;
+}
+
+.phub-spotlight {
+  padding: 18px;
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg, rgba(121, 229, 233, 0.09), rgba(255, 255, 255, 0.02)),
+    var(--phub-bg-card-strong);
+}
+
+.phub-spotlight small {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--phub-accent-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.phub-spotlight strong {
+  color: var(--phub-text);
+  font-size: 1.02rem;
+}
+
+.phub-spotlight p {
+  margin-top: 8px;
+  color: var(--phub-text-muted);
+  line-height: 1.55;
+}
+
+.phub-tabRail {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.phub-tabButton,
+.phub-mobileChip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: rgba(10, 23, 35, 0.72);
+  color: var(--phub-text-soft);
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.phub-tabButton:hover,
+.phub-mobileChip:hover {
+  transform: translateY(-1px);
+  border-color: rgba(121, 229, 233, 0.28);
+  color: var(--phub-text);
+}
+
+.phub-tabButton.is-active,
+.phub-tabButton.active,
+.phub-mobileChip.is-active,
+.phub-mobileChip.active {
+  background: linear-gradient(135deg, rgba(78, 199, 211, 0.18), rgba(11, 28, 42, 0.9));
+  border-color: rgba(121, 229, 233, 0.34);
+  color: var(--phub-text);
+}
+
+.phub-tabButtonCopy {
+  display: grid;
+  gap: 2px;
+  text-align: left;
+}
+
+.phub-tabButtonCopy strong {
+  color: var(--phub-text);
+  font-size: 0.96rem;
+  font-weight: 600;
+}
+
+.phub-tabButtonCopy span {
+  color: var(--phub-text-muted);
+  font-size: 0.78rem;
+}
+
+.phub-mobileRail {
+  display: none;
+  gap: 10px;
+  margin-top: 18px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.phub-mobileRail::-webkit-scrollbar {
+  height: 6px;
+}
+
+.phub-mobileRail::-webkit-scrollbar-thumb {
+  background: rgba(121, 229, 233, 0.3);
+}
+
+.phub-contextBar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 20px;
+  padding: 18px 20px;
+  border-radius: 22px;
+}
+
+.phub-contextCopy small {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: var(--phub-accent-strong);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.phub-contextCopy h2 {
+  font-size: 1.45rem;
+}
+
+.phub-contextSignal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--phub-text);
+}
+
+.phub-stage {
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+  padding: 24px;
+  border-radius: 28px;
+}
+
+.phub-heroCopy > .lk-card-eyebrow {
+  color: var(--phub-accent-strong);
+}
+
+.phub-heroMeta > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--phub-text);
+}
+
+.phub-contextCopy > .lk-card-eyebrow {
+  color: var(--phub-accent-strong);
+}
+
+.phub-view {
+  min-width: 0;
+}
+
+.phub-tabLayout,
+.phub-view .lk-tab-layout {
+  display: grid;
+  gap: 18px;
+}
+
+.phub-view .lk-grid,
+.phub-view .lk-grid-two {
+  display: grid;
+  gap: 18px;
+}
+
+.phub-view .lk-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.phub-view .lk-feature-card,
+.phub-view .lk-surface-card,
+.phub-view .lk-empty-card,
+.phub-view .lk-payment-card,
+.phub-view .child-card {
+  border-radius: 24px;
+}
+
+.phub-view .lk-feature-card,
+.phub-view .lk-surface-card,
+.phub-view .lk-empty-card {
+  padding: 24px;
+}
+
+.phub-view .lk-payment-card,
+.phub-view .child-card {
+  padding: 22px;
+}
+
+.phub-view .lk-feature-card-primary {
+  background:
+    linear-gradient(135deg, rgba(78, 199, 211, 0.11), rgba(11, 28, 42, 0.92)),
+    var(--phub-bg-card);
+}
+
+.phub-view .lk-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.phub-view .lk-metric-card {
+  padding: 18px;
+  border-radius: 20px;
+}
+
+.phub-view .lk-metric-card strong,
+.phub-view .lk-payment-title h4,
+.phub-view .child-header h4,
+.phub-view .section-header h3,
+.phub-view .lk-card-head h3,
+.phub-view .lk-card-eyebrow,
+.phub-view .lk-feature-copy h3,
+.phub-view .lk-profile-field span,
+.phub-view .lk-upcoming-session strong,
+.phub-view .attendance-child strong {
+  color: var(--phub-text);
+}
+
+.phub-view .lk-card-eyebrow,
+.phub-view .lk-kicker,
+.phub-view .lk-muted-copy,
+.phub-view .lk-payment-caption,
+.phub-view .section-header p,
+.phub-view .lk-profile-field label,
+.phub-view .attendance-session-info p {
+  color: var(--phub-text-muted);
+}
+
+.phub-view .section-header,
+.phub-view .lk-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.phub-view .section-header h2,
+.phub-view .section-header h3,
+.phub-view .lk-card-head h3 {
+  margin: 4px 0 0;
+}
+
+.phub-view .lk-profile-grid,
+.phub-view .children-grid,
+.phub-view .lk-attendance-layout {
+  display: grid;
+  gap: 16px;
+}
+
+.phub-view .lk-profile-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.phub-view .lk-profile-field,
+.phub-view .branch-info,
+.phub-view .schedule-item,
+.phub-view .lk-upcoming-session,
+.phub-view .attendance-item,
+.phub-view .stat-badge {
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.phub-view .lk-profile-field {
+  padding: 16px 18px;
+}
+
+.phub-view .stat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+}
+
+.phub-view .payment-stats,
+.phub-view .attendance-stats,
+.phub-view .children-actions,
+.phub-view .edit-actions,
+.phub-view .settings-actions,
+.phub-view .lk-feature-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.phub-view .lk-payment-stack,
+.phub-view .lk-edit-children-stack,
+.phub-view .lk-upcoming-list {
+  display: grid;
+  gap: 16px;
+}
+
+.phub-view .lk-payment-card-head,
+.phub-view .child-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.phub-view .lk-payment-progress {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.phub-view .lk-payment-progress span {
+  background: linear-gradient(90deg, var(--phub-accent), var(--phub-accent-warm));
+}
+
+.phub-view .lk-payment-meta,
+.phub-view .lk-upcoming-meta,
+.phub-view .attendance-meta,
+.phub-view .attendance-filters,
+.phub-view .child-edit-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.phub-view .lk-attendance-layout {
+  grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+  align-items: start;
+}
+
+.phub-view .attendance-filters {
+  align-self: start;
+  position: sticky;
+  top: 18px;
+}
+
+.phub-view .attendance-filter-card,
+.phub-view .lk-inline-empty,
+.phub-view .lk-quick-card,
+.phub-view .child-edit-form,
+.phub-view .about-info {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.phub-view .attendance-filter-card,
+.phub-view .lk-inline-empty,
+.phub-view .lk-quick-card,
+.phub-view .about-info {
+  padding: 18px;
+}
+
+.phub-shell .child-edit-form {
+  padding: 20px;
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.02)),
+    rgba(8, 23, 35, 0.7);
+}
+
+.phub-shell .child-edit-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.phub-shell .child-edit-kicker {
+  color: var(--phub-accent-strong);
+}
+
+.phub-shell .child-edit-status {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(121, 229, 233, 0.1);
+  border: 1px solid rgba(121, 229, 233, 0.22);
+  color: var(--phub-text);
+}
+
+.phub-shell .child-edit-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.phub-shell .child-edit-form input,
+.phub-shell .child-edit-form select,
+.phub-shell .child-edit-form textarea,
+.phub-shell .phub-view input,
+.phub-shell .phub-view select,
+.phub-shell .phub-view textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid var(--phub-border-strong);
+  border-radius: 14px;
+  background: rgba(4, 14, 22, 0.92);
+  color: var(--phub-text);
+}
+
+.phub-shell .child-edit-form input::placeholder,
+.phub-shell .phub-view input::placeholder,
+.phub-shell .phub-view textarea::placeholder {
+  color: var(--phub-text-muted);
+}
+
+.phub-shell .child-edit-form label,
+.phub-shell .phub-view label {
+  display: grid;
+  gap: 8px;
+  color: var(--phub-text);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.phub-shell .child-edit-branch-group,
+.phub-shell .branch-selection-content,
+.phub-shell .payment-modal-info {
+  display: grid;
+  gap: 14px;
+}
+
+.phub-shell .loading-branches,
+.phub-shell .no-branches-message,
+.phub-shell .lk-inline-empty {
+  color: var(--phub-text-soft);
+}
+
+.phub-shell .branch-info,
+.phub-shell .schedule-item {
+  padding: 14px 16px;
+}
+
+.phub-shell .branch-info strong,
+.phub-shell .schedule-item strong {
+  color: var(--phub-text);
+}
+
+.phub-shell .branch-actions,
+.phub-shell .payment-actions,
+.phub-shell .attendance-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.phub-shell .add-child-btn,
+.phub-shell .save-btn,
+.phub-shell .cancel-btn,
+.phub-shell .remove-child-btn,
+.phub-shell .payment-btn,
+.phub-shell .edit-btn2,
+.phub-shell .logout-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 0 16px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+
+.phub-shell .add-child-btn,
+.phub-shell .save-btn,
+.phub-shell .payment-btn {
+  background: linear-gradient(135deg, #4ec7d3, #2f8fa6);
+  color: #041118;
+}
+
+.phub-shell .edit-btn2,
+.phub-shell .cancel-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: var(--phub-text);
+}
+
+.phub-shell .remove-child-btn,
+.phub-shell .logout-btn {
+  background: rgba(137, 36, 52, 0.16);
+  border-color: rgba(239, 100, 124, 0.2);
+  color: #ffd6dc;
+}
+
+.phub-shell .modal-overlay {
+  padding: 24px 16px;
+  background: rgba(3, 10, 16, 0.76);
+  backdrop-filter: blur(8px);
+}
+
+.phub-shell .modaly,
+.phub-shell .branch-modal-content,
+.phub-shell .application-modal {
+  width: min(960px, 100%);
+  border-radius: 28px;
+  border: 1px solid rgba(121, 229, 233, 0.2);
+  background: #091724;
+  color: var(--phub-text);
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
+}
+
+.phub-shell .modal-header,
+.phub-shell .branch-modal-header,
+.phub-shell .application-modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+}
+
+.phub-shell .modal-content,
+.phub-shell .branch-modal-body,
+.phub-shell .application-modal-body {
+  background: transparent;
+}
+
+.phub-shell .close-btn {
+  color: var(--phub-text);
+}
+
+@media (max-width: 1100px) {
+  .phub-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .phub-view .lk-metric-grid,
+  .phub-shell .child-edit-grid,
+  .phub-view .lk-profile-grid,
+  .phub-view .lk-grid-two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .phub-shell {
+    padding: 96px 14px 28px;
+  }
+
+  .phub-statRack {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .phub-tabRail {
+    display: none;
+  }
+
+  .phub-mobileRail {
+    display: flex;
+  }
+
+  .phub-contextBar,
+  .phub-view .section-header,
+  .phub-view .lk-card-head,
+  .phub-view .lk-payment-card-head,
+  .phub-view .child-header,
+  .phub-shell .child-edit-header {
+    flex-direction: column;
+  }
+
+  .phub-view .lk-attendance-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .phub-view .attendance-filters {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .phub-hero,
+  .phub-stage,
+  .phub-view .lk-feature-card,
+  .phub-view .lk-surface-card,
+  .phub-view .lk-empty-card,
+  .phub-view .lk-payment-card,
+  .phub-view .child-card,
+  .phub-shell .child-edit-form {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .phub-statRack,
+  .phub-view .lk-metric-grid,
+  .phub-shell .child-edit-grid,
+  .phub-view .lk-profile-grid,
+  .phub-view .lk-grid-two {
+    grid-template-columns: 1fr;
+  }
+
+  .phub-heroCopy h1 {
+    font-size: 1.8rem;
+  }
+
+  .phub-contextSignal {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .phub-shell .modaly,
+  .phub-shell .branch-modal-content,
+  .phub-shell .application-modal {
+    border-radius: 22px;
+  }
+}
+
+/* Stabilization pass for Parent Portal UI */
+
+.phub-shell :where(h1, h2, h3, h4, h5, h6, strong, .payment-amount) {
+  color: var(--phub-text) !important;
+}
+
+.phub-shell :where(p, span, label, small, li) {
+  color: var(--phub-text-soft);
+}
+
+.phub-shell :where(svg) {
+  color: inherit;
+  stroke: currentColor;
+}
+
+.phub-shell .lk-child-grid,
+.phub-shell .lk-payment-stack,
+.phub-shell .lk-attendance-stack,
+.phub-shell .lk-upcoming-list {
+  min-width: 0;
+}
+
+.phub-shell .lk-child-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.phub-shell .lk-child-card,
+.phub-shell .lk-attendance-card,
+.phub-shell .lk-payment-card,
+.phub-shell .lk-upcoming-session,
+.phub-shell .child-card {
+  overflow: hidden;
+}
+
+.phub-shell .lk-child-card-head,
+.phub-shell .lk-attendance-card-head,
+.phub-shell .lk-payment-card-head,
+.phub-shell .section-header {
+  align-items: flex-start;
+}
+
+.phub-shell .lk-child-card-actions,
+.phub-shell .payment-stats,
+.phub-shell .attendance-stats,
+.phub-shell .children-actions,
+.phub-shell .settings-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.phub-shell .payment-btn,
+.phub-shell .add-child-btn,
+.phub-shell .save-btn {
+  color: #041118 !important;
+}
+
+.phub-shell .edit-btn2,
+.phub-shell .cancel-btn,
+.phub-shell .remove-child-btn,
+.phub-shell .logout-btn {
+  color: var(--phub-text) !important;
+}
+
+.phub-shell .lk-profile-grid,
+.phub-shell .lk-payment-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.phub-shell .lk-payment-meta-grid > div,
+.phub-shell .lk-profile-field,
+.phub-shell .lk-upcoming-session,
+.phub-shell .stat-badge,
+.phub-shell .branch-info,
+.phub-shell .schedule-item {
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.phub-shell .lk-payment-meta-grid > div strong,
+.phub-shell .lk-profile-field span {
+  display: block;
+  margin-top: 4px;
+}
+
+.phub-shell .attendance-filter-card,
+.phub-shell .lk-inline-empty,
+.phub-shell .about-info {
+  color: var(--phub-text-soft);
+}
+
+@media (max-width: 720px) {
+  .phub-shell .lk-profile-grid,
+  .phub-shell .lk-payment-meta-grid,
+  .phub-shell .lk-child-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Hard contrast override */
+
+.phub-shell button {
+  color: var(--phub-text);
+}
+
+.phub-shell button:not(.payment-btn):not(.add-child-btn):not(.save-btn) {
+  background-color: rgba(9, 24, 35, 0.94);
+}
+
+.phub-shell :where(
+  .lk-feature-card,
+  .lk-surface-card,
+  .lk-empty-card,
+  .lk-payment-card,
+  .lk-attendance-card,
+  .lk-child-card,
+  .child-card,
+  .attendance-filter-card,
+  .lk-inline-empty,
+  .about-info,
+  .child-edit-form,
+  .branch-info,
+  .schedule-item,
+  .lk-upcoming-session,
+  .lk-profile-field,
+  .lk-payment-meta-grid > div,
+  .stat-badge,
+  .branch-selection-info,
+  .branches-list,
+  .branch-option,
+  .application-modal,
+  .application-modal-header,
+  .application-modal-body,
+  .application-child-card,
+  .application-branch-card,
+  .application-branch-list,
+  .payment-plans-modal,
+  .payment-summary,
+  .payment-plan-card,
+  .modaly,
+  .modal-content,
+  .branch-modal-content,
+  .branch-modal-header,
+  .branch-modal-body
+) {
+  background-color: rgba(9, 24, 35, 0.94) !important;
+  background-image: none !important;
+}
+
+.phub-shell :where(
+  .lk-feature-card,
+  .lk-surface-card,
+  .lk-empty-card,
+  .lk-payment-card,
+  .lk-attendance-card,
+  .lk-child-card,
+  .child-card,
+  .attendance-filter-card,
+  .child-edit-form,
+  .application-modal,
+  .branch-modal-content,
+  .modaly
+) {
+  border-color: rgba(121, 229, 233, 0.14) !important;
+}
+
+.phub-shell :where(
+  .lk-card-eyebrow,
+  .lk-kicker,
+  .child-edit-kicker
+) {
+  color: var(--phub-accent-strong) !important;
+}
+
+.phub-shell :where(
+  .lk-feature-copy p,
+  .lk-empty-card p,
+  .lk-payment-caption,
+  .attendance-session-info p,
+  .about-info p,
+  .branch-info p,
+  .schedule-item p
+) {
+  color: var(--phub-text-soft) !important;
+}
+
+.phub-shell :where(
+  input,
+  select,
+  textarea
+) {
+  background-color: rgba(4, 13, 19, 0.96) !important;
+  color: var(--phub-text) !important;
+  border-color: rgba(121, 229, 233, 0.18) !important;
+}
+
+.phub-shell :where(
+  input::placeholder,
+  textarea::placeholder
+) {
+  color: rgba(201, 216, 231, 0.62) !important;
+}
+
+.phub-shell .payment-btn,
+.phub-shell .add-child-btn,
+.phub-shell .save-btn {
+  background-image: linear-gradient(135deg, #4ec7d3, #2f8fa6) !important;
+  background-color: transparent !important;
+}
+
+.phub-shell .edit-btn2,
+.phub-shell .cancel-btn,
+.phub-shell .remove-child-btn,
+.phub-shell .logout-btn,
+.phub-shell .close-btn {
+  border-color: rgba(121, 229, 233, 0.14) !important;
+}

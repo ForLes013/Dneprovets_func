@@ -1,0 +1,558 @@
+/* Concept Section - Полностью изолированные стили */
+.concept-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #111111 0%, #0a0a0a 50%, #111111 100%);
+  position: relative;
+  scroll-margin-top: 80px;
+  content-visibility: auto;
+  contain-intrinsic-size: 1120px;
+}
+
+.concept-section .section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.concept-section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.concept-section-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.concept-section-subtitle {
+  font-size: 1.3rem;
+  color: #cccccc;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.concept-pillars-section {
+  margin-bottom: 100px;
+}
+
+.concept-pillars-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.concept-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.concept-pillar-card {
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.concept-pillar-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 165, 116, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.concept-pillar-card:hover::before {
+  left: 100%;
+}
+
+.concept-pillar-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(212, 165, 116, 0.3);
+  transform: translateY(-5px);
+}
+
+.concept-pillar-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  color: #000000;
+}
+
+.concept-pillar-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.concept-pillar-description {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.concept-pillar-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.concept-feature-tag {
+  padding: 8px 16px;
+  background: rgba(65, 105, 225, 0.1);
+  border: 1px solid rgba(65, 105, 225, 0.3);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #4169e1;
+  font-weight: 500;
+}
+
+.concept-methodology-section {
+  margin-bottom: 100px;
+}
+
+.concept-methodology-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.concept-methodology-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.concept-methodology-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.concept-methodology-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.concept-methodology-step {
+  padding: 30px 25px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.concept-methodology-step:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(212, 165, 116, 0.3);
+  transform: translateY(-3px);
+}
+
+.concept-step-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.concept-step-number {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.concept-step-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(212, 165, 116, 0.1);
+  border: 1px solid rgba(212, 165, 116, 0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4a574;
+}
+
+.concept-step-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.concept-step-description {
+  font-size: 1rem;
+  color: #999999;
+  line-height: 1.6;
+}
+
+.concept-advantages-section {
+  margin-bottom: 100px;
+}
+
+.concept-advantages-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.concept-advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.concept-advantage-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.concept-advantage-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(65, 105, 225, 0.3);
+  transform: translateX(10px);
+}
+
+.concept-advantage-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000000;
+}
+
+.concept-advantage-content {
+  flex: 1;
+}
+
+.concept-advantage-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.concept-advantage-description {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.concept-results-section {
+  margin-bottom: 100px;
+}
+
+.concept-results-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.concept-results-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.concept-results-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.concept-results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.concept-result-card {
+  padding: 30px 25px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.concept-result-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(212, 165, 116, 0.3);
+  transform: translateY(-3px);
+}
+
+.concept-result-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.concept-result-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.concept-result-description {
+  font-size: 0.9rem;
+  color: #999999;
+}
+
+.concept-philosophy-section {
+  margin-bottom: 80px;
+  padding: 60px 40px;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 165, 116, 0.05),
+    rgba(65, 105, 225, 0.05)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+}
+
+.concept-philosophy-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.concept-philosophy-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.concept-philosophy-text {
+  text-align: left;
+}
+
+.concept-philosophy-text p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.concept-quote {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #d4a574;
+  border-left: 4px solid #d4a574;
+  padding-left: 20px;
+  margin: 30px 0;
+  line-height: 1.6;
+}
+
+.concept-join-section {
+  padding: 60px 40px;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 165, 116, 0.1),
+    rgba(65, 105, 225, 0.1)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  text-align: center;
+}
+
+.concept-join-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.concept-join-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.concept-join-description {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.concept-join-button {
+  padding: 16px 40px;
+  background: linear-gradient(45deg, #d4a574, #4169e1);
+  color: #000000;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.concept-join-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(65, 105, 225, 0.3);
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .concept-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-methodology-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .concept-advantages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .concept-section-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .concept-section {
+    padding: 80px 0;
+  }
+
+  .concept-section-title {
+    font-size: 2.5rem;
+  }
+
+  .concept-section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .concept-pillars-title,
+  .concept-methodology-title,
+  .concept-advantages-title,
+  .concept-results-title {
+    font-size: 2rem;
+  }
+
+  .concept-methodology-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-advantage-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .concept-results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-philosophy-section {
+    padding: 40px 25px;
+  }
+
+  .concept-join-section {
+    padding: 40px 25px;
+  }
+
+  .concept-join-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .concept-section-title {
+    font-size: 2rem;
+  }
+
+  .concept-pillar-card,
+  .concept-methodology-step,
+  .concept-advantage-card,
+  .concept-result-card {
+    padding: 25px 20px;
+  }
+
+  .concept-pillar-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .concept-step-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .concept-quote {
+    font-size: 1.1rem;
+    padding-left: 15px;
+  }
+
+  .concept-join-button {
+    width: 100%;
+    padding: 14px 20px;
+  }
+}

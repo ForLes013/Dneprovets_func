@@ -1,0 +1,1932 @@
+.upx-page {
+  --upx-bg: #06111b;
+  --upx-bg-soft: #0a1825;
+  --upx-panel: #0d1d2d;
+  --upx-panel-2: #112438;
+  --upx-panel-3: #162c43;
+  --upx-line: rgba(129, 180, 221, 0.16);
+  --upx-line-strong: rgba(129, 180, 221, 0.28);
+  --upx-text: #f3f8fd;
+  --upx-text-soft: #c6d7e8;
+  --upx-text-muted: #8ea4ba;
+  --upx-accent: #69c5da;
+  --upx-accent-strong: #95ddeb;
+  --upx-warm: #d6b07d;
+  --upx-success: #22c55e;
+  --upx-warning: #f4b942;
+  --upx-danger: #f87171;
+  min-height: 100vh;
+  padding: 112px 20px 44px;
+  background:
+    radial-gradient(circle at top left, rgba(105, 197, 218, 0.14), transparent 24%),
+    radial-gradient(circle at top right, rgba(214, 176, 125, 0.12), transparent 18%),
+    linear-gradient(180deg, #05101a 0%, #07131d 48%, #06111b 100%);
+  color: var(--upx-text);
+}
+
+.upx-page *,
+.upx-page *::before,
+.upx-page *::after {
+  box-sizing: border-box;
+}
+
+.upx-page button,
+.upx-page input,
+.upx-page select,
+.upx-page textarea {
+  font: inherit;
+}
+
+.upx-page svg {
+  flex-shrink: 0;
+}
+
+.upx-page h1,
+.upx-page h2,
+.upx-page h3,
+.upx-page h4,
+.upx-page h5,
+.upx-page p {
+  margin-top: 0;
+}
+
+.upx-page .muted,
+.upx-page .lk-muted-copy,
+.upx-page .error-text {
+  color: var(--upx-text-muted);
+}
+
+.upx-page .warning {
+  color: #ffd98c;
+}
+
+.upx-page .neutral {
+  color: var(--upx-text-soft);
+}
+
+.upx-page .upx-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(300px, 0.95fr);
+  gap: 20px;
+  padding: 30px;
+  border: 1px solid var(--upx-line);
+  border-radius: 30px;
+  background:
+    linear-gradient(145deg, rgba(15, 33, 49, 0.98), rgba(8, 20, 31, 0.96)),
+    var(--upx-panel);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
+}
+
+.upx-page .upx-hero-main {
+  display: grid;
+  gap: 18px;
+}
+
+.upx-page .upx-hero-main h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  color: var(--upx-text);
+}
+
+.upx-page .upx-hero-main p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--upx-text-soft);
+  line-height: 1.75;
+}
+
+.upx-page .lk-card-eyebrow,
+.upx-page .lk-kicker {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 0 14px;
+  border: 1px solid rgba(149, 221, 235, 0.2);
+  border-radius: 999px;
+  background: rgba(149, 221, 235, 0.08);
+  color: var(--upx-accent-strong);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.upx-page .upx-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.upx-page .upx-contact-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--upx-text);
+}
+
+.upx-page .upx-metric-rack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.upx-page .upx-metric-card,
+.upx-page .lk-metric-card,
+.upx-page .lk-simple-metric {
+  padding: 18px;
+  border: 1px solid var(--upx-line);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.upx-page .upx-metric-card strong,
+.upx-page .lk-metric-card strong,
+.upx-page .lk-simple-metric strong {
+  display: block;
+  color: var(--upx-text);
+  font-size: 1.85rem;
+  line-height: 1;
+}
+
+.upx-page .upx-metric-card span,
+.upx-page .lk-metric-card span,
+.upx-page .lk-simple-metric span {
+  display: block;
+  margin-top: 8px;
+  color: var(--upx-text-soft);
+  font-size: 0.92rem;
+}
+
+.upx-page .upx-spotlight {
+  grid-column: 1 / -1;
+  padding: 18px;
+  border: 1px solid rgba(149, 221, 235, 0.16);
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg, rgba(105, 197, 218, 0.1), rgba(255, 255, 255, 0.02)),
+    rgba(255, 255, 255, 0.03);
+}
+
+.upx-page .upx-spotlight small {
+  display: block;
+  color: var(--upx-accent-strong);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.upx-page .upx-spotlight strong {
+  display: block;
+  margin-top: 10px;
+  color: var(--upx-text);
+  font-size: 1rem;
+}
+
+.upx-page .upx-spotlight p {
+  margin: 8px 0 0;
+  color: var(--upx-text-muted);
+  line-height: 1.6;
+}
+
+.upx-page .upx-nav,
+.upx-page .upx-mobile-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.upx-page .upx-nav-button,
+.upx-page .upx-mobile-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 0 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  background: rgba(9, 23, 34, 0.88);
+  color: var(--upx-text-soft);
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.upx-page .upx-nav-button:hover,
+.upx-page .upx-mobile-chip:hover {
+  transform: translateY(-1px);
+  border-color: rgba(149, 221, 235, 0.24);
+  color: var(--upx-text);
+}
+
+.upx-page .upx-nav-button.is-active,
+.upx-page .upx-mobile-chip.is-active {
+  border-color: rgba(149, 221, 235, 0.32);
+  background: linear-gradient(135deg, rgba(105, 197, 218, 0.16), rgba(9, 23, 34, 0.96));
+  color: var(--upx-text);
+}
+
+.upx-page .upx-nav-copy {
+  display: grid;
+  gap: 2px;
+  text-align: left;
+}
+
+.upx-page .upx-nav-copy strong {
+  color: var(--upx-text);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.upx-page .upx-nav-copy span {
+  color: var(--upx-text-muted);
+  font-size: 0.77rem;
+}
+
+.upx-page .upx-mobile-nav {
+  display: none;
+}
+
+.upx-page .upx-context {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 22px;
+  border: 1px solid var(--upx-line);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015)),
+    rgba(13, 29, 45, 0.9);
+}
+
+.upx-page .upx-context-copy {
+  display: grid;
+  gap: 6px;
+}
+
+.upx-page .upx-context-copy small {
+  color: var(--upx-accent-strong);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.upx-page .upx-context-copy h2 {
+  margin: 0;
+  color: var(--upx-text);
+  font-size: 1.4rem;
+}
+
+.upx-page .upx-context-signal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 16px;
+  border: 1px solid rgba(149, 221, 235, 0.14);
+  border-radius: 16px;
+  background: rgba(149, 221, 235, 0.07);
+  color: var(--upx-text-soft);
+}
+
+.upx-page .upx-stage {
+  margin-top: 20px;
+}
+
+.upx-page .upx-view,
+.upx-page .lk-tab-layout {
+  display: grid;
+  gap: 20px;
+}
+
+.upx-page .lk-grid,
+.upx-page .lk-metric-grid,
+.upx-page .info-grid,
+.upx-page .lk-profile-grid,
+.upx-page .lk-detail-grid,
+.upx-page .application-request-grid,
+.upx-page .application-request-grid-compact {
+  display: grid;
+  gap: 16px;
+}
+
+.upx-page .lk-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.upx-page .lk-metric-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.upx-page .lk-child-grid,
+.upx-page .branches-list,
+.upx-page .application-branch-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.upx-page .lk-profile-grid,
+.upx-page .info-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.upx-page .lk-detail-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.upx-page .lk-detail-grid-wide {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.upx-page .lk-surface-card,
+.upx-page .lk-feature-card,
+.upx-page .lk-child-card,
+.upx-page .lk-payment-card,
+.upx-page .lk-attendance-card,
+.upx-page .lk-progress-card,
+.upx-page .lk-edit-child-card,
+.upx-page .payment-summary,
+.upx-page .child-card,
+.upx-page .application-card,
+.upx-page .application-flow-card,
+.upx-page .application-summary-card,
+.upx-page .application-panel,
+.upx-page .modal,
+.upx-page .modaly {
+  border: 1px solid var(--upx-line);
+  border-radius: 26px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015)),
+    rgba(13, 29, 45, 0.94);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
+  color: var(--upx-text);
+}
+
+.upx-page .lk-surface-card,
+.upx-page .lk-feature-card,
+.upx-page .lk-child-card,
+.upx-page .lk-payment-card,
+.upx-page .lk-attendance-card,
+.upx-page .lk-progress-card,
+.upx-page .lk-edit-child-card,
+.upx-page .payment-summary,
+.upx-page .application-card,
+.upx-page .application-flow-card,
+.upx-page .application-summary-card,
+.upx-page .application-panel {
+  padding: 24px;
+}
+
+.upx-page .lk-feature-card-primary {
+  background:
+    linear-gradient(135deg, rgba(105, 197, 218, 0.14), rgba(12, 26, 40, 0.96)),
+    rgba(13, 29, 45, 0.94);
+}
+
+.upx-page .section-header,
+.upx-page .lk-card-head,
+.upx-page .application-flow-block-head,
+.upx-page .application-panel-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.upx-page .lk-card-head h3,
+.upx-page .lk-card-head h4,
+.upx-page .section-header h3,
+.upx-page .section-header h4,
+.upx-page .section-header h2 {
+  margin: 4px 0 0;
+  color: var(--upx-text);
+}
+
+.upx-page .lk-card-head p,
+.upx-page .section-header p,
+.upx-page .lk-feature-copy p,
+.upx-page .lk-payment-caption,
+.upx-page .app-date,
+.upx-page .app-info,
+.upx-page .about-info {
+  color: var(--upx-text-muted);
+}
+
+.upx-page .lk-feature-copy {
+  display: grid;
+  gap: 10px;
+}
+
+.upx-page .lk-feature-copy h3 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.upx-page .lk-feature-actions,
+.upx-page .children-actions,
+.upx-page .edit-actions,
+.upx-page .modal-actions,
+.upx-page .settings-actions,
+.upx-page .application-flow-actions-buttons,
+.upx-page .application-actions-buttons,
+.upx-page .lk-child-card-actions,
+.upx-page .lk-payment-head-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.upx-page .lk-action-list,
+.upx-page .lk-payment-stack,
+.upx-page .lk-attendance-stack,
+.upx-page .lk-edit-children-stack,
+.upx-page .application-flow-list,
+.upx-page .application-summary-list,
+.upx-page .applications-list {
+  display: grid;
+  gap: 14px;
+}
+
+.upx-page .lk-action-list-item,
+.upx-page .lk-upcoming-session,
+.upx-page .branch-info,
+.upx-page .schedule-item,
+.upx-page .application-summary-row,
+.upx-page .application-flow-review-row,
+.upx-page .app-detail-item,
+.upx-page .detail-item,
+.upx-page .info-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.upx-page .lk-action-list-item h5,
+.upx-page .lk-upcoming-session strong,
+.upx-page .child-edit-header h4,
+.upx-page .branch-header h4,
+.upx-page .application-flow-option-title,
+.upx-page .app-header h4,
+.upx-page .application-child-top strong,
+.upx-page .application-branch-head strong {
+  margin: 0 0 6px;
+  color: var(--upx-text);
+}
+
+.upx-page .lk-action-list-item p,
+.upx-page .lk-upcoming-session p,
+.upx-page .info-item p,
+.upx-page .detail-item p,
+.upx-page .application-flow-option-meta,
+.upx-page .application-flow-actions-copy,
+.upx-page .application-flow-copy,
+.upx-page .application-branch-meta,
+.upx-page .application-child-meta,
+.upx-page .application-summary-note,
+.upx-page .branch-selection-info,
+.upx-page .branch-details,
+.upx-page .payment-modal-info,
+.upx-page .plan-description {
+  margin: 0;
+  color: var(--upx-text-muted);
+  line-height: 1.6;
+}
+
+.upx-page .lk-empty-card,
+.upx-page .no-branches,
+.upx-page .no-applications,
+.upx-page .application-empty-state {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  padding: 28px;
+  border: 1px dashed rgba(149, 221, 235, 0.2);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.02);
+  text-align: center;
+}
+
+.upx-page .lk-empty-card h4,
+.upx-page .lk-empty-card h5,
+.upx-page .no-branches h4,
+.upx-page .application-empty-state h4 {
+  margin: 0;
+}
+
+.upx-page .lk-inline-empty {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 18px;
+  border: 1px dashed rgba(149, 221, 235, 0.2);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.upx-page .lk-upcoming-meta,
+.upx-page .payment-stats,
+.upx-page .attendance-stats,
+.upx-page .application-flow-progress-meta,
+.upx-page .application-actions-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.upx-page .lk-detail-pill,
+.upx-page .stat-badge,
+.upx-page .application-flow-chip,
+.upx-page .application-summary-badge,
+.upx-page .app-detail-item {
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.upx-page .lk-detail-pill span,
+.upx-page .payment-summary span,
+.upx-page .summary-details span,
+.upx-page .stat-badge span,
+.upx-page .detail-item span,
+.upx-page .info-item span {
+  display: block;
+  color: var(--upx-text-muted);
+  font-size: 0.84rem;
+}
+
+.upx-page .lk-detail-pill strong,
+.upx-page .summary-total,
+.upx-page .payment-amount,
+.upx-page .plan-price,
+.upx-page .app-detail-item strong,
+.upx-page .detail-item strong,
+.upx-page .info-item strong {
+  display: block;
+  margin-top: 6px;
+  color: var(--upx-text);
+  font-weight: 700;
+}
+
+.upx-page .payment-amount {
+  font-size: 1.3rem;
+}
+
+.upx-page .summary-total {
+  font-size: 1.8rem;
+}
+
+.upx-page .status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--upx-text);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.upx-page .status-badge.confirmed,
+.upx-page .status-badge.attended,
+.upx-page .status-badge.expired {
+  border-color: rgba(34, 197, 94, 0.26);
+  background: rgba(34, 197, 94, 0.12);
+  color: #d9ffe5;
+}
+
+.upx-page .status-badge.pending,
+.upx-page .status-badge.scheduled,
+.upx-page .status-badge.warning {
+  border-color: rgba(244, 185, 66, 0.26);
+  background: rgba(244, 185, 66, 0.12);
+  color: #ffe9b0;
+}
+
+.upx-page .status-badge.missed,
+.upx-page .status-badge.rejected {
+  border-color: rgba(248, 113, 113, 0.24);
+  background: rgba(248, 113, 113, 0.12);
+  color: #ffd8d8;
+}
+
+.upx-page .status-badge.rescheduled {
+  border-color: rgba(96, 165, 250, 0.24);
+  background: rgba(96, 165, 250, 0.12);
+  color: #d9e8ff;
+}
+
+.upx-page .progress-bar,
+.upx-page .lk-progress-bar,
+.upx-page .application-flow-progress-bar {
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.upx-page .progress-fill,
+.upx-page .progress-bar .progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--upx-accent), #4e8fa9);
+}
+
+.upx-page .progress-text,
+.upx-page .lk-progress-copy {
+  color: var(--upx-text-muted);
+}
+
+.upx-page .payment-btn,
+.upx-page .save-btn,
+.upx-page .add-child-btn,
+.upx-page .btn-add,
+.upx-page .confirm-btn,
+.upx-page .cta-button,
+.upx-page .auth-btn,
+.upx-page .application-create-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--upx-accent), #42839d);
+  color: #031019;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.18s ease, filter 0.18s ease;
+}
+
+.upx-page .payment-btn:hover,
+.upx-page .save-btn:hover,
+.upx-page .add-child-btn:hover,
+.upx-page .btn-add:hover,
+.upx-page .confirm-btn:hover,
+.upx-page .cta-button:hover,
+.upx-page .auth-btn:hover,
+.upx-page .application-create-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.upx-page .edit-btn2,
+.upx-page .cancel-btn,
+.upx-page .secondary-action-btn,
+.upx-page .toggle-details,
+.upx-page .close-btn,
+.upx-page .payment-btn.secondary,
+.upx-page .application-inline-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--upx-text);
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.upx-page .edit-btn2:hover,
+.upx-page .cancel-btn:hover,
+.upx-page .secondary-action-btn:hover,
+.upx-page .toggle-details:hover,
+.upx-page .close-btn:hover,
+.upx-page .application-inline-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(149, 221, 235, 0.2);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.upx-page .btn-remove,
+.upx-page .remove-child-btn,
+.upx-page .logout-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid rgba(248, 113, 113, 0.22);
+  border-radius: 12px;
+  background: rgba(124, 29, 29, 0.22);
+  color: #ffd8d8;
+  cursor: pointer;
+}
+
+.upx-page .payment-btn:disabled,
+.upx-page .save-btn:disabled,
+.upx-page .confirm-btn:disabled,
+.upx-page .edit-btn2:disabled,
+.upx-page .cancel-btn:disabled,
+.upx-page .secondary-action-btn:disabled,
+.upx-page .btn-remove:disabled,
+.upx-page .auth-btn:disabled {
+  opacity: 0.58;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.upx-page .form-group,
+.upx-page .filter-group,
+.upx-page .time-group,
+.upx-page .child-edit-branch-group,
+.upx-page .application-comment-field {
+  display: grid;
+  gap: 8px;
+}
+
+.upx-page .form-row,
+.upx-page .child-edit-grid,
+.upx-page .child-edit-form,
+.upx-page .application-child-grid,
+.upx-page .application-flow-form,
+.upx-page .application-flow-stack,
+.upx-page .lk-about-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.upx-page .child-edit-grid,
+.upx-page .application-child-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.upx-page label,
+.upx-page .form-group label,
+.upx-page .filter-group label {
+  color: var(--upx-text-soft);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.upx-page input:not([type="checkbox"]):not([type="radio"]),
+.upx-page select,
+.upx-page textarea,
+.upx-page .form-input,
+.upx-page .message-input,
+.upx-page .message-input textarea {
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 14px;
+  background: rgba(4, 14, 23, 0.82) !important;
+  color: var(--upx-text) !important;
+  box-shadow: none !important;
+}
+
+.upx-page textarea,
+.upx-page .application-message-input {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.upx-page input::placeholder,
+.upx-page textarea::placeholder {
+  color: rgba(198, 215, 232, 0.52);
+}
+
+.upx-page input:focus,
+.upx-page select:focus,
+.upx-page textarea:focus,
+.upx-page .form-input:focus {
+  outline: none;
+  border-color: rgba(149, 221, 235, 0.28) !important;
+  box-shadow: 0 0 0 3px rgba(105, 197, 218, 0.12);
+}
+
+.upx-page select option {
+  background: #0a1825;
+  color: var(--upx-text);
+}
+
+.upx-page .modal-overlay,
+.upx-page .application-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(3, 10, 16, 0.78);
+  backdrop-filter: blur(8px);
+}
+
+.upx-page .modal,
+.upx-page .modaly,
+.upx-page .application-flow-modal,
+.upx-page .application-request-modal,
+.upx-page .application-wizard-modal {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 960px);
+  max-height: min(90vh, 900px);
+  overflow: hidden;
+}
+
+.upx-page .branch-modal,
+.upx-page .payment-plans-modal {
+  width: min(100%, 860px);
+}
+
+.upx-page .modal-header,
+.upx-page .application-flow-header,
+.upx-page .application-wizard-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 24px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.upx-page .modal-header h3,
+.upx-page .application-flow-heading,
+.upx-page .application-wizard-header h3 {
+  margin: 0;
+  color: var(--upx-text);
+}
+
+.upx-page .modal-content,
+.upx-page .application-flow-scroll,
+.upx-page .application-wizard-scroll,
+.upx-page .application-wizard-content {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 22px 24px 24px;
+  overflow-y: auto;
+}
+
+.upx-page .application-flow-progress,
+.upx-page .application-stepper {
+  display: grid;
+  gap: 12px;
+}
+
+.upx-page .application-stepper {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.upx-page .application-step-copy,
+.upx-page .application-flow-state {
+  display: grid;
+  gap: 4px;
+}
+
+.upx-page .application-step-index {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(149, 221, 235, 0.14);
+  color: var(--upx-text);
+  font-weight: 700;
+}
+
+.upx-page .application-flow-card-head,
+.upx-page .application-flow-option-main,
+.upx-page .application-child-top,
+.upx-page .application-branch-head,
+.upx-page .branch-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.upx-page .application-flow-card-body,
+.upx-page .application-review,
+.upx-page .application-details,
+.upx-page .app-details {
+  display: grid;
+  gap: 14px;
+}
+
+.upx-page .applications-content,
+.upx-page .payment-expanded,
+.upx-page .expanded-details,
+.upx-page .lk-payment-expanded,
+.upx-page .attendance-records,
+.upx-page .application-flow-review {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.upx-page .lk-payment-expanded-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 4px;
+}
+
+.upx-page .loading-container,
+.upx-page .error-container {
+  width: min(560px, 100%);
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  padding: 42px 28px;
+  border: 1px solid var(--upx-line);
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015)),
+    rgba(13, 29, 45, 0.94);
+  text-align: center;
+}
+
+.upx-page.upx-standalone {
+  display: grid;
+  place-items: center;
+}
+
+.upx-page .loading-spinner {
+  width: 44px;
+  height: 44px;
+  border: 3px solid rgba(255, 255, 255, 0.08);
+  border-top-color: var(--upx-accent);
+  border-radius: 999px;
+  animation: upx-spin 0.8s linear infinite;
+}
+
+@keyframes upx-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1180px) {
+  .upx-page .upx-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .upx-page .lk-metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .upx-page .lk-detail-grid-wide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .upx-page {
+    padding: 102px 16px 36px;
+  }
+
+  .upx-page .upx-nav {
+    display: none;
+  }
+
+  .upx-page .upx-mobile-nav {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .upx-page .upx-mobile-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .upx-page .upx-context,
+  .upx-page .section-header,
+  .upx-page .lk-card-head,
+  .upx-page .application-flow-block-head,
+  .upx-page .application-panel-header,
+  .upx-page .modal-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .upx-page .lk-grid-two,
+  .upx-page .lk-profile-grid,
+  .upx-page .lk-detail-grid,
+  .upx-page .lk-detail-grid-wide,
+  .upx-page .child-edit-grid,
+  .upx-page .application-child-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .upx-page {
+    padding: 96px 12px 28px;
+  }
+
+  .upx-page .upx-hero,
+  .upx-page .lk-surface-card,
+  .upx-page .lk-feature-card,
+  .upx-page .lk-child-card,
+  .upx-page .lk-payment-card,
+  .upx-page .lk-attendance-card,
+  .upx-page .lk-progress-card,
+  .upx-page .lk-edit-child-card,
+  .upx-page .payment-summary,
+  .upx-page .modal,
+  .upx-page .modaly {
+    border-radius: 22px;
+  }
+
+  .upx-page .upx-hero,
+  .upx-page .lk-surface-card,
+  .upx-page .lk-feature-card,
+  .upx-page .lk-child-card,
+  .upx-page .lk-payment-card,
+  .upx-page .lk-attendance-card,
+  .upx-page .lk-progress-card,
+  .upx-page .lk-edit-child-card,
+  .upx-page .payment-summary,
+  .upx-page .application-card,
+  .upx-page .application-flow-card,
+  .upx-page .application-summary-card,
+  .upx-page .application-panel {
+    padding: 18px;
+  }
+
+  .upx-page .lk-metric-grid,
+  .upx-page .upx-metric-rack {
+    grid-template-columns: 1fr;
+  }
+
+  .upx-page .upx-context-signal,
+  .upx-page .lk-action-list-item,
+  .upx-page .lk-upcoming-session,
+  .upx-page .detail-item,
+  .upx-page .info-item,
+  .upx-page .application-flow-card-head,
+  .upx-page .application-flow-option-main,
+  .upx-page .branch-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .upx-page .modal-overlay,
+  .upx-page .application-modal-overlay {
+    padding: 10px;
+  }
+
+  .upx-page .modal,
+  .upx-page .modaly,
+  .upx-page .application-flow-modal,
+  .upx-page .application-request-modal,
+  .upx-page .application-wizard-modal {
+    width: 100%;
+    max-height: 100vh;
+    border-radius: 20px;
+  }
+
+  .upx-page .application-stepper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.loading-container,
+.error-container {
+  width: min(560px, calc(100% - 24px));
+  margin: 120px auto 32px;
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  padding: 42px 28px;
+  border: 1px solid rgba(129, 180, 221, 0.16);
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015)),
+    rgba(13, 29, 45, 0.94);
+  color: #f3f8fd;
+  text-align: center;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
+}
+
+.loading-spinner {
+  width: 44px;
+  height: 44px;
+  border: 3px solid rgba(255, 255, 255, 0.08);
+  border-top-color: #69c5da;
+  border-radius: 999px;
+  animation: upx-spin 0.8s linear infinite;
+}
+
+.error-container .auth-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #69c5da, #42839d);
+  color: #031019;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Strict Portal Polish */
+.upx-page {
+  --upx-panel: #0c1823;
+  --upx-panel-2: #122130;
+  --upx-panel-3: #162737;
+  --upx-line: rgba(137, 166, 194, 0.14);
+  --upx-line-strong: rgba(137, 166, 194, 0.22);
+  --upx-text-soft: #cad6e2;
+  --upx-text-muted: #92a4b7;
+  --upx-accent: #547791;
+  --upx-accent-strong: #7f9db3;
+  --upx-warm: #b99669;
+  padding-top: 124px;
+  background:
+    radial-gradient(circle at top left, rgba(84, 119, 145, 0.16), transparent 22%),
+    linear-gradient(180deg, #07111a 0%, #0b1621 54%, #0a141d 100%);
+}
+
+.upx-page .upx-hero,
+.upx-page .lk-surface-card,
+.upx-page .lk-feature-card,
+.upx-page .lk-child-card,
+.upx-page .lk-payment-card,
+.upx-page .lk-attendance-card,
+.upx-page .lk-progress-card,
+.upx-page .lk-edit-child-card,
+.upx-page .payment-summary,
+.upx-page .application-card,
+.upx-page .application-flow-card,
+.upx-page .application-summary-card,
+.upx-page .application-panel {
+  border-radius: 22px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
+}
+
+.upx-page .upx-hero {
+  gap: 24px;
+  padding: 34px;
+}
+
+.upx-page .upx-stage {
+  margin-top: 28px;
+}
+
+.upx-page .upx-context {
+  margin-top: 24px;
+  padding: 22px 24px;
+  border-radius: 20px;
+}
+
+.upx-page .upx-nav,
+.upx-page .upx-mobile-nav {
+  margin-top: 24px;
+  gap: 10px;
+}
+
+.upx-page .upx-nav-button,
+.upx-page .upx-mobile-chip {
+  min-height: 50px;
+  border-radius: 15px;
+}
+
+.upx-page .lk-tab-layout,
+.upx-page .upx-view,
+.upx-page .lk-grid,
+.upx-page .lk-payment-stack,
+.upx-page .lk-attendance-stack,
+.upx-page .lk-edit-children-stack,
+.upx-page .applications-list,
+.upx-page .application-summary-list {
+  gap: 20px;
+}
+
+.upx-page .lk-metric-grid,
+.upx-page .upx-metric-rack,
+.upx-page .lk-child-grid,
+.upx-page .lk-profile-grid,
+.upx-page .lk-detail-grid,
+.upx-page .branches-list {
+  gap: 18px;
+}
+
+.upx-page .lk-surface-card,
+.upx-page .lk-feature-card,
+.upx-page .lk-child-card,
+.upx-page .lk-payment-card,
+.upx-page .lk-attendance-card,
+.upx-page .lk-edit-child-card,
+.upx-page .payment-summary,
+.upx-page .application-card,
+.upx-page .application-flow-card,
+.upx-page .application-summary-card,
+.upx-page .application-panel {
+  padding: 28px;
+}
+
+.upx-page .lk-card-head,
+.upx-page .section-header,
+.upx-page .application-flow-block-head,
+.upx-page .application-panel-header {
+  gap: 18px;
+  margin-bottom: 4px;
+}
+
+.upx-page .lk-profile-field {
+  display: grid;
+  gap: 10px;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.upx-page .lk-profile-field label {
+  color: var(--upx-text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.upx-page .lk-profile-field span {
+  color: var(--upx-text);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.upx-page .lk-bullet-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--upx-text-soft);
+}
+
+.upx-page .lk-progress-card {
+  display: grid;
+  gap: 18px;
+  padding: 22px 24px;
+}
+
+.upx-page .lk-linear-progress {
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.upx-page .lk-linear-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--upx-accent), #89a4b8);
+}
+
+.upx-page .lk-child-card-head,
+.upx-page .lk-payment-card-head,
+.upx-page .lk-attendance-card-head {
+  gap: 18px;
+  margin-bottom: 4px;
+}
+
+.upx-page .lk-detail-pill,
+.upx-page .stat-badge {
+  border-radius: 16px;
+}
+
+.upx-page .payment-btn,
+.upx-page .save-btn,
+.upx-page .add-child-btn,
+.upx-page .btn-add,
+.upx-page .confirm-btn,
+.upx-page .cta-button,
+.upx-page .auth-btn,
+.upx-page .application-create-btn {
+  background: linear-gradient(135deg, #5d8099, #44657c);
+}
+
+.upx-page .edit-btn2,
+.upx-page .cancel-btn,
+.upx-page .secondary-action-btn,
+.upx-page .toggle-details,
+.upx-page .close-btn,
+.upx-page .application-inline-btn {
+  border-radius: 12px;
+}
+
+.upx-page .logout-btn,
+.upx-page .btn-remove,
+.upx-page .remove-child-btn {
+  border-radius: 12px;
+}
+
+.upx-page .attendance-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.upx-page .attendance-filters .filter-group {
+  min-width: 220px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.upx-page .attendance-filters .filter-group svg {
+  color: var(--upx-text-muted);
+}
+
+.upx-page .payment-plans-modal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.upx-page .payment-plan-modal {
+  padding: 18px 18px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+  transition: transform 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+}
+
+.upx-page .payment-plan-modal:hover {
+  transform: translateY(-1px);
+  border-color: rgba(127, 157, 179, 0.26);
+}
+
+.upx-page .payment-plan-modal.selected {
+  border-color: rgba(127, 157, 179, 0.34);
+  background: rgba(84, 119, 145, 0.14);
+}
+
+.upx-page .payment-plan-modal h4 {
+  margin: 0 0 8px;
+}
+
+@media (max-width: 900px) {
+  .upx-page {
+    padding-top: 112px;
+  }
+}
+
+@media (max-width: 680px) {
+  .upx-page .upx-hero,
+  .upx-page .lk-surface-card,
+  .upx-page .lk-feature-card,
+  .upx-page .lk-child-card,
+  .upx-page .lk-payment-card,
+  .upx-page .lk-attendance-card,
+  .upx-page .lk-edit-child-card,
+  .upx-page .payment-summary,
+  .upx-page .application-card,
+  .upx-page .application-flow-card,
+  .upx-page .application-summary-card,
+  .upx-page .application-panel {
+    padding: 20px;
+  }
+
+  .upx-page .attendance-filters .filter-group {
+    min-width: 100%;
+  }
+}
+
+/* Portal final polish */
+.upx-page .upx-stage,
+.upx-page .upx-view,
+.upx-page .lk-tab-layout {
+  gap: 24px;
+}
+
+.upx-page .lk-grid,
+.upx-page .lk-grid-two,
+.upx-page .lk-child-grid,
+.upx-page .lk-payment-stack,
+.upx-page .lk-attendance-stack,
+.upx-page .lk-edit-children-stack {
+  gap: 22px;
+}
+
+.upx-page .lk-surface-card,
+.upx-page .lk-child-card,
+.upx-page .lk-payment-card,
+.upx-page .lk-attendance-card,
+.upx-page .lk-edit-child-card {
+  display: grid;
+  gap: 16px;
+}
+
+.upx-page .section-header,
+.upx-page .lk-card-head,
+.upx-page .lk-child-card-head,
+.upx-page .lk-payment-card-head,
+.upx-page .lk-attendance-card-head {
+  margin-bottom: 0;
+}
+
+.upx-page .lk-child-card-head p,
+.upx-page .lk-payment-card-head p,
+.upx-page .lk-attendance-card-head p,
+.upx-page .section-header p {
+  margin: 6px 0 0;
+}
+
+.upx-page .lk-detail-grid,
+.upx-page .lk-detail-grid-wide,
+.upx-page .lk-payment-meta-grid {
+  gap: 12px;
+}
+
+.upx-page .lk-detail-pill {
+  min-height: 90px;
+  padding: 14px 16px;
+}
+
+.upx-page .lk-attendance-card .lk-detail-grid-wide {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.upx-page .lk-attendance-card .lk-detail-pill:last-child {
+  display: none;
+}
+
+.upx-page .lk-attendance-card .lk-detail-pill strong {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.upx-page .attendance-filters {
+  gap: 14px;
+  margin-bottom: 2px;
+}
+
+.upx-page .attendance-filters .filter-group {
+  min-height: 54px;
+}
+
+.upx-page .lk-edit-child-card .form-row,
+.upx-page .lk-edit-child-card .form-grid,
+.upx-page .lk-edit-child-card .info-grid {
+  gap: 14px;
+}
+
+.upx-page .lk-edit-child-card .branch-info-row,
+.upx-page .lk-edit-child-card .child-card-actions,
+.upx-page .lk-child-actions {
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .upx-page .lk-detail-pill {
+    min-height: 0;
+  }
+}
+
+/* Strict LK Theme */
+.upx-page {
+  --upx-bg: #0f1720;
+  --upx-bg-soft: #111b25;
+  --upx-panel: #131d27;
+  --upx-panel-2: #17222d;
+  --upx-panel-3: #1b2835;
+  --upx-line: rgba(148, 163, 184, 0.16);
+  --upx-line-strong: rgba(148, 163, 184, 0.24);
+  --upx-text: #e5edf5;
+  --upx-text-soft: #b4c0cc;
+  --upx-text-muted: #7f90a3;
+  --upx-accent: #5d768c;
+  --upx-accent-strong: #86a0b8;
+  --upx-warm: #b89d78;
+  background: #0f1720;
+}
+
+.upx-page .upx-hero,
+.upx-page .upx-context,
+.upx-page .lk-surface-card,
+.upx-page .lk-feature-card,
+.upx-page .lk-child-card,
+.upx-page .lk-payment-card,
+.upx-page .lk-attendance-card,
+.upx-page .lk-progress-card,
+.upx-page .lk-edit-child-card,
+.upx-page .payment-summary,
+.upx-page .application-card,
+.upx-page .application-flow-card,
+.upx-page .application-summary-card,
+.upx-page .application-panel,
+.upx-page .modal,
+.upx-page .modaly {
+  border: 1px solid #233141;
+  border-radius: 14px;
+  background: #131d27;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.upx-page .upx-hero {
+  gap: 18px;
+  padding: 24px 24px 22px;
+}
+
+.upx-page .upx-hero-main {
+  gap: 10px;
+}
+
+.upx-page .upx-hero-main h1 {
+  font-size: clamp(1.7rem, 2.4vw, 2.3rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.upx-page .upx-hero-main p,
+.upx-page .upx-spotlight,
+.upx-page .lk-metric-card p,
+.upx-page .upx-nav-copy span,
+.upx-page .upx-context-copy small {
+  display: none;
+}
+
+.upx-page .upx-hero-meta {
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.upx-page .upx-contact-chip {
+  min-height: 34px;
+  padding: 0 10px;
+  border: 1px solid #243546;
+  border-radius: 999px;
+  background: #17222d;
+  color: var(--upx-text-soft);
+}
+
+.upx-page .upx-metric-rack {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.upx-page .upx-metric-card,
+.upx-page .lk-metric-card,
+.upx-page .lk-simple-metric {
+  min-height: 92px;
+  padding: 14px 16px;
+  border: 1px solid #243546;
+  border-radius: 12px;
+  background: #17222d;
+  box-shadow: none;
+}
+
+.upx-page .upx-metric-card strong,
+.upx-page .lk-metric-card strong,
+.upx-page .lk-simple-metric strong {
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.upx-page .upx-metric-card span,
+.upx-page .lk-metric-card span,
+.upx-page .lk-simple-metric span {
+  color: var(--upx-text-muted);
+  font-size: 0.76rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.upx-page .upx-nav,
+.upx-page .upx-mobile-nav,
+.upx-page .upx-context {
+  margin-top: 16px;
+}
+
+.upx-page .upx-nav {
+  gap: 8px;
+}
+
+.upx-page .upx-nav-button,
+.upx-page .upx-mobile-chip {
+  min-height: 44px;
+  border: 1px solid #243546;
+  border-radius: 10px;
+  background: #131d27;
+  color: var(--upx-text-soft);
+  box-shadow: none;
+}
+
+.upx-page .upx-nav-button:hover,
+.upx-page .upx-mobile-chip:hover {
+  background: #17222d;
+  border-color: #314355;
+  color: var(--upx-text);
+  transform: none;
+}
+
+.upx-page .upx-nav-button.is-active,
+.upx-page .upx-mobile-chip.is-active {
+  border-color: #47647d;
+  background: #17222d;
+  color: #f4f8fb;
+  box-shadow: inset 3px 0 0 #6f8aa2;
+}
+
+.upx-page .upx-nav-copy strong {
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.upx-page .upx-context {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 18px;
+}
+
+.upx-page .upx-context-copy h2 {
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+
+.upx-page .upx-context-signal {
+  min-height: 34px;
+  padding: 0 10px;
+  border: 1px solid #243546;
+  border-radius: 999px;
+  background: #17222d;
+  color: var(--upx-text-soft);
+}
+
+.upx-page .upx-stage,
+.upx-page .upx-view,
+.upx-page .lk-tab-layout {
+  gap: 18px;
+}
+
+.upx-page .lk-grid,
+.upx-page .lk-grid-two,
+.upx-page .lk-child-grid,
+.upx-page .lk-payment-stack,
+.upx-page .lk-attendance-stack,
+.upx-page .lk-edit-children-stack {
+  gap: 16px;
+}
+
+.upx-page .lk-surface-card,
+.upx-page .lk-feature-card,
+.upx-page .lk-child-card,
+.upx-page .lk-payment-card,
+.upx-page .lk-attendance-card,
+.upx-page .lk-edit-child-card,
+.upx-page .payment-summary {
+  gap: 14px;
+  padding: 20px;
+}
+
+.upx-page .lk-feature-card-primary {
+  border-color: #314355;
+  background: #131d27;
+}
+
+.upx-page .lk-card-eyebrow,
+.upx-page .lk-kicker {
+  min-height: 24px;
+  padding: 0 8px;
+  border: 1px solid #243546;
+  border-radius: 999px;
+  background: #17222d;
+  color: var(--upx-text-muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+}
+
+.upx-page .lk-card-head,
+.upx-page .section-header {
+  gap: 12px;
+}
+
+.upx-page .lk-card-head h3,
+.upx-page .lk-card-head h4,
+.upx-page .section-header h2,
+.upx-page .section-header h3 {
+  letter-spacing: -0.02em;
+}
+
+.upx-page .lk-feature-copy h3 {
+  font-size: 1.15rem;
+}
+
+.upx-page .lk-feature-copy p {
+  color: var(--upx-text-muted);
+  font-size: 0.92rem;
+}
+
+.upx-page .lk-action-list-item,
+.upx-page .lk-upcoming-session,
+.upx-page .info-item,
+.upx-page .detail-item {
+  padding: 14px 16px;
+  border: 1px solid #243546;
+  border-radius: 12px;
+  background: #17222d;
+}
+
+.upx-page .lk-action-list-item p {
+  color: var(--upx-text-muted);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.upx-page .lk-upcoming-session p {
+  color: var(--upx-text-muted);
+}
+
+.upx-page .lk-empty-card,
+.upx-page .lk-inline-empty {
+  border: 1px dashed #314355;
+  border-radius: 12px;
+  background: #17222d;
+}
+
+.upx-page .lk-detail-pill,
+.upx-page .stat-badge,
+.upx-page .app-detail-item {
+  min-height: 74px;
+  padding: 12px 14px;
+  border: 1px solid #243546;
+  border-radius: 12px;
+  background: #17222d;
+}
+
+.upx-page .lk-detail-pill span,
+.upx-page .detail-item span,
+.upx-page .info-item span {
+  color: var(--upx-text-muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.upx-page .lk-detail-pill strong,
+.upx-page .detail-item strong,
+.upx-page .info-item strong {
+  font-size: 0.95rem;
+}
+
+.upx-page .payment-btn,
+.upx-page .save-btn,
+.upx-page .add-child-btn,
+.upx-page .btn-add,
+.upx-page .confirm-btn,
+.upx-page .cta-button,
+.upx-page .auth-btn,
+.upx-page .application-create-btn {
+  border: 1px solid #4d667d;
+  border-radius: 10px;
+  background: #5b7388;
+  color: #f8fbff;
+  box-shadow: none;
+}
+
+.upx-page .payment-btn:hover,
+.upx-page .save-btn:hover,
+.upx-page .add-child-btn:hover,
+.upx-page .btn-add:hover,
+.upx-page .confirm-btn:hover,
+.upx-page .cta-button:hover,
+.upx-page .auth-btn:hover,
+.upx-page .application-create-btn:hover {
+  background: #667f95;
+  transform: none;
+}
+
+.upx-page .edit-btn2,
+.upx-page .cancel-btn,
+.upx-page .secondary-action-btn,
+.upx-page .toggle-details,
+.upx-page .close-btn,
+.upx-page .application-inline-btn {
+  border: 1px solid #243546;
+  border-radius: 10px;
+  background: #17222d;
+  color: var(--upx-text-soft);
+  box-shadow: none;
+}
+
+.upx-page .edit-btn2:hover,
+.upx-page .cancel-btn:hover,
+.upx-page .secondary-action-btn:hover,
+.upx-page .toggle-details:hover,
+.upx-page .close-btn:hover,
+.upx-page .application-inline-btn:hover {
+  background: #1b2835;
+  border-color: #314355;
+  color: var(--upx-text);
+  transform: none;
+}
+
+.upx-page .btn-remove,
+.upx-page .remove-child-btn,
+.upx-page .logout-btn {
+  border-radius: 10px;
+}
+
+.upx-page .status-badge {
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+}
+
+.upx-page input:not([type="checkbox"]):not([type="radio"]),
+.upx-page select,
+.upx-page textarea,
+.upx-page .form-input,
+.upx-page .message-input,
+.upx-page .message-input textarea {
+  border: 1px solid #243546;
+  border-radius: 10px;
+  background: #17222d;
+  color: var(--upx-text);
+  box-shadow: none;
+}
+
+.upx-page input:focus,
+.upx-page select:focus,
+.upx-page textarea:focus,
+.upx-page .form-input:focus {
+  border-color: #5d768c;
+  box-shadow: 0 0 0 3px rgba(93, 118, 140, 0.16);
+}
+
+.upx-page .attendance-filters .filter-group,
+.upx-page .lk-profile-field,
+.upx-page .payment-plan-modal {
+  border: 1px solid #243546;
+  border-radius: 12px;
+  background: #17222d;
+}
+
+@media (max-width: 900px) {
+  .upx-page {
+    padding-top: 110px;
+  }
+
+  .upx-page .upx-hero,
+  .upx-page .upx-context,
+  .upx-page .lk-surface-card,
+  .upx-page .lk-feature-card,
+  .upx-page .lk-child-card,
+  .upx-page .lk-payment-card,
+  .upx-page .lk-attendance-card,
+  .upx-page .lk-edit-child-card {
+    padding: 18px;
+  }
+
+  .upx-page .upx-metric-rack {
+    grid-template-columns: 1fr;
+  }
+
+  .upx-page .upx-context {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
